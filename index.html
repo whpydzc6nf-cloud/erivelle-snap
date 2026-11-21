@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>에리벨 스냅 | 진주·경남 웨딩 아이폰 스냅 안내</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --card: #ffffff;
+      --ink: #22201e;
+      --muted: #6e675f;
+      --accent: #b88b58;
+      --accent-soft: #f3eadf;
+      --line: #ece6dc;
+      --strike: #a69f96;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      padding: 28px 16px 88px;
+    }
+
+    .wrap {
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .brand-header {
+      text-align: center;
+      margin-bottom: 24px;
+      padding: 12px 8px 4px;
+    }
+
+    .brand-en {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 30px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--ink);
+    }
+
+    .brand-sub {
+      margin-top: 4px;
+      font-size: 13px;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    .open-badge {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 5px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #8c6334;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .section-title {
+      margin: 20px 4px 12px;
+    }
+
+    .section-title h1 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .section-title p {
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 24px 22px;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 10px rgba(34, 32, 30, 0.03);
+    }
+
+    .label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .product-name {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .product-desc {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin: 12px 0 16px;
+    }
+
+    .price-old {
+      font-size: 16px;
+      color: var(--strike);
+      text-decoration: line-through;
+      font-weight: 500;
+    }
+
+    .price-now {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .price-tag {
+      font-size: 11px;
+      font-weight: 600;
+      color: #8c6334;
+      background: var(--accent-soft);
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+
+    .details {
+      list-style: none;
+      font-size: 14px;
+      color: #36322e;
+    }
+
+    .details li {
+      margin-bottom: 8px;
+    }
+
+    .details li:last-child {
+      margin-bottom: 0;
+    }
+
+    .sub-note {
+      display: block;
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 2px;
+      padding-left: 2px;
+    }
+
+    .bold {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--line);
+      margin: 14px 0;
+    }
+
+    .card-heading {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .discount-item {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .discount-item:last-of-type {
+      border-bottom: none;
+    }
+
+    .discount-name {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .discount-val {
+      font-size: 15px;
+      font-weight: 700;
+      color: #8c6334;
+    }
+
+    .footnote {
+      margin-top: 12px;
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .notice-list {
+      list-style: none;
+      font-size: 13.5px;
+      color: #3a3632;
+    }
+
+    .notice-list li {
+      position: relative;
+      padding-left: 12px;
+      margin-bottom: 8px;
+    }
+
+    .notice-list li::before {
+      content: "-";
+      position: absolute;
+      left: 0;
+      color: var(--muted);
+    }
+
+    .cta-bar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(246, 243, 238, 0.92);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid var(--line);
+      padding: 12px 16px;
+    }
+
+    .cta-inner {
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .cta-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      background: var(--ink);
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 14px 18px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brand-header">
+      <div class="brand-en">Erivelle Snap</div>
+      <div class="brand-sub">진주 · 경남 웨딩 아이폰 스냅</div>
+      <div class="open-badge">OPEN LAUNCHING EVENT · 선착순 오픈 특가</div>
+    </header>
+
+    <div class="section-title">
+      <h1>iPhone SNAP</h1>
+      <p>아이폰 스냅 상품 안내</p>
+    </div>
+
+    <section class="card">
+      <div class="label">PRODUCT 01</div>
+      <div class="product-name">Basic</div>
+      <div class="price-row">
+        <span class="price-old">170,000</span>
+        <span class="price-now">110,000</span>
+        <span class="price-tag">오픈 특가</span>
+      </div>
+      <ul class="details">
+        <li>1. <span class="bold">작가 1인</span> 촬영 진행</li>
+        <li>
+          2. 예식 진행 중 촬영 + 짧은 영상
+          <span class="sub-note">(리허설 - 신부대기실 - 양가 어머님 입장 - 원판촬영)</span>
+          <span class="sub-note">: <span class="bold">원본 600컷 이상 및 10초 내외 짧은 영상 5컷 당일 전송</span></span>
+        </li>
+        <li>
+          3. 작가 선정 베스트 컷 <span class="bold">10장 보정</span>
+          <span class="sub-note">: 2일 이내 피드백 시 수정 1회 가능</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="label">PRODUCT 02</div>
+      <div class="product-name">Special</div>
+      <div class="price-row">
+        <span class="price-old">240,000</span>
+        <span class="price-now">160,000</span>
+        <span class="price-tag">오픈 특가</span>
+      </div>
+      <ul class="details">
+        <li>1. <span class="bold">작가 1인</span> 촬영 진행</li>
+        <li>
+          2. 예식 진행 중 촬영 + 짧은 영상
+          <span class="sub-note">(리허설 - 신부대기실 - 양가 어머님 입장 - 원판촬영)</span>
+          <span class="sub-note">: <span class="bold">원본 1,000컷 이상 및 10초 내외 짧은 영상 10컷 당일 전송</span></span>
+        </li>
+        <li>
+          3. 작가 선정 베스트 컷 <span class="bold">20장 보정</span>
+          <span class="sub-note">: 2일 이내 피드백 시 수정 1회 가능</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="label">PRODUCT 03</div>
+      <div class="product-name">Studio Sub</div>
+      <div class="price-row">
+        <span class="price-old">250,000</span>
+        <span class="price-now">170,000</span>
+        <span class="price-tag">오픈 특가</span>
+      </div>
+      <ul class="details">
+        <li>1. <span class="bold">작가 1인</span> 촬영 진행</li>
+        <li>2. <span class="bold">원본 700컷 이상 당일 전송</span> (짧은 영상 갯수 제한 없음)</li>
+        <li>
+          3. 작가 선정 베스트 컷 <span class="bold">30장 보정</span>
+          <span class="sub-note">: 2일 이내 피드백 시 수정 1회 가능</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="label">PRODUCT 04</div>
+      <div class="product-name">Studio Sub + Special</div>
+      <div class="product-desc">스튜디오 + 본식 세트 상품</div>
+      <div class="price-row">
+        <span class="price-old">450,000</span>
+        <span class="price-now">290,000</span>
+        <span class="price-tag">오픈 특가</span>
+      </div>
+      <div class="divider"></div>
+      <ul class="details">
+        <li><span class="bold">1. 스튜디오 서브 스냅</span></li>
+        <li>- <span class="bold">작가 1인</span> 촬영 진행</li>
+        <li>- <span class="bold">원본 700컷 이상 당일 전송</span> (짧은 영상 갯수 제한 없음)</li>
+        <li>- 작가 선정 베스트 컷 <span class="bold">30장 보정</span></li>
+      </ul>
+      <div class="divider"></div>
+      <ul class="details">
+        <li><span class="bold">2. 본식 아이폰 스냅 Special</span></li>
+        <li>- <span class="bold">작가 1인</span> 촬영 진행</li>
+        <li>
+          - 예식 진행 중 촬영 + 짧은 영상
+          <span class="sub-note">(리허설 - 신부대기실 - 양가 어머님 입장 - 원판촬영)</span>
+          <span class="sub-note">: <span class="bold">원본 1,000컷 이상 및 10초 내외 짧은 영상 10컷 당일 전송</span></span>
+        </li>
+        <li>- 작가 선정 베스트 컷 <span class="bold">20장 보정</span></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <div class="card-heading">🎉 할인 이벤트</div>
+      <div class="discount-item">
+        <span class="discount-name">당일 계약 할인</span>
+        <span class="discount-val">-10,000원</span>
+      </div>
+      <div class="discount-item">
+        <span class="discount-name">짝꿍 할인</span>
+        <span class="discount-val">-10,000원</span>
+      </div>
+      <div class="discount-item">
+        <span class="discount-name">블로그 / 카페 촬영 후기</span>
+        <span class="discount-val">-10,000원</span>
+      </div>
+      <p class="footnote">
+        * 아이폰 스냅 전용 할인 구성으로, Special 구성 이상부터 적용 가능한 이벤트입니다.<br />
+        * 아이폰 스냅 단독 구성일 경우 적용 가능
+      </p>
+    </section>
+
+    <section class="card">
+      <div class="card-heading">공통 참고 사항</div>
+      <ul class="notice-list">
+        <li>2부 추가 +30,000원 (환복 후 30분 촬영)</li>
+        <li>보정본 추가 시 장당 +5,000원</li>
+        <li>2차 활용(포트폴리오 업로드) 동의 비적용 시 +20,000원</li>
+        <li>진주 지역 출장비 무료 / 경남 외곽(사천·창원·통영·거제 등)은 지역별 출장비 별도 안내</li>
+        <li>촬영 시 90분 전 도착하여 신부대기실부터 예식 종료까지 촬영 진행됩니다.</li>
+        <li>iPhone 15 Pro 기종으로 촬영 진행됩니다.</li>
+        <li>모든 사진은 본식 일주일 이후 삭제됩니다.</li>
+        <li>아이폰 스냅 원본은 촬영 당일 네이버 MYBOX를 통해 전달됩니다.</li>
+        <li>아이폰 스냅 보정본은 영업일 기준 5일 이내 전달드립니다.</li>
+        <li>교회, 성당 등 종교 예식일 경우 미리 말씀 부탁드립니다.</li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="cta-bar">
+    <div class="cta-inner">
+      <a class="cta-btn" href="https://www.instagram.com/erivelle.snap/" target="_blank" rel="noopener">
+        인스타그램 @erivelle.snap DM 예약 문의
+      </a>
+    </div>
+  </div>
+</body>
+</html>
